@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/lhuan/Desktop/Project/Tensorflow/chaper2/path/to/model/model.ckpt"
+all_model_checkpoint_paths: "/home/lhuan/Desktop/Project/Tensorflow/chaper2/path/to/model/model.ckpt"

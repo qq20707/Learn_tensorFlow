@@ -7,7 +7,7 @@ rng = np.random
 #Parameters
 
 learning_rate = 0.01
-training_epochs = 2000
+training_epochs = 1000
 display_step =50
 
 #Traning Data 
