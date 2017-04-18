@@ -21,13 +21,35 @@ class SQList():
 			k = k//2
 		return lis
 
+		#Insert sort
+	def InsertSort(self):
+		lis = self.r
+		length = len(lis)
+		for i in range(1,length):
+			if lis[i]<lis[i-1]:
+				temp = lis[i]
+				j = i-1
+				while j>=0 and temp < lis[j]:
+					lis[j+1]=lis[j]
+					j=j-1
 
+				lis[j+1]=temp 
+
+		return lis
 
 if __name__ == '__main__':
 
 	sortbeforelis =[3,41,53,123,13,8,7,11,23,90,1]
+	print('Shell Sort:')
+	print(str(sortbeforelis))
 	alis = []
 	sqlist = SQList(sortbeforelis)
-	alis = sqlist.ShellSort()
-	print(sortbeforelis)					
+	alis = sqlist.ShellSort()					
 	print(alis)
+
+	sortbeforelis =[33,41,53,123,13,8,7,11,23,90,21]
+	print('\n Insert Sort:')
+	print(sortbeforelis)
+	sqlist = SQList(sortbeforelis)
+	ali= sqlist.InsertSort()
+	print(ali)
